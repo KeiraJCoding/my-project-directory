@@ -9,4 +9,8 @@ RSpec.describe "codeword is horse" do
         result = check_codeword("hearse") 
         expect(result).to eq "Close but nope"
     end
+    it "returns WRONG if any other codeword" do
+        result = check_codeword("holiday") 
+        expect(result).to eq "WRONG"
+    end
 end
